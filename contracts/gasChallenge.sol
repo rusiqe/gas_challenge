@@ -24,12 +24,8 @@ contract gasChallenge {
     //Implement Remaining Gas Optimization Techniques Here
     //Sum of elements in the numbers array should equal 0
     function optimizedFunction() public {
-      uint[10] memory cachedNumbers = numbers;
-    
-    for (uint256 i = 0; i < cachedNumbers.length; ++i) {
-        cachedNumbers[i] = 0;
+    for (uint256 i = 0; i < numbers.length; ++i) {
+        numbers[i] = 0;
     }
-    
-    numbers = cachedNumbers;
     }
  }

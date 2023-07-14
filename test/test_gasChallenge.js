@@ -5,10 +5,9 @@ describe("Deploy Gas Challenge Contract", () => {
   let gas_contract;
 
   beforeEach(async () => {
-    const gas_challenge_contract = await ethers.getContractFactory(
-      "gasChallenge"
-    );
+    const gas_challenge_contract = await ethers.getContractFactory("gasChallenge");
     gas_contract = await gas_challenge_contract.deploy();
+    await gas_contract.deployed(); // Ensure the contract is fully deployed
   });
 
   describe("Compute Gas", () => {
@@ -20,6 +19,7 @@ describe("Deploy Gas Challenge Contract", () => {
 
   describe("Check Sum Of Array", () => {
     it("Should return 0", async () => {
+      await gas_contract.optimizedFunction(); // Call optimizedFunction() to update the array
       const sum = await gas_contract.getSumOfArray();
       expect(sum).to.equal(0);
     });

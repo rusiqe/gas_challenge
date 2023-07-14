@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\Users\\TauraiMutimutema\\Documents\\GitHub\\gas_challenge1\\contracts\\gasChallenge.sol": {
-      "lastModificationDate": 1689334248544,
-      "contentHash": "95feef400d6a5f1212b667feb72e4b3f",
+      "lastModificationDate": 1689335579285,
+      "contentHash": "623fbbf4c65bd0b2580314b0adda24a9",
       "sourceName": "contracts/gasChallenge.sol",
       "solcConfig": {
         "version": "0.8.18",
